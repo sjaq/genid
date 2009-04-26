@@ -1,0 +1,8 @@
+#!/usr/bin/env ruby -wKU
+
+require 'classes/genid.rb'
+if ARGV[0] == 'str'
+  puts GenID.get(ARGV[1])
+elsif ARGV[0] == 'id'
+  puts GenID.get(ARGV[1].to_i)
+end
